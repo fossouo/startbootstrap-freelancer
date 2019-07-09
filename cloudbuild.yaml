@@ -2,7 +2,6 @@ steps:
   - name: 'gcr.io/donald-gcp/npm'
     args: ['install']
   - name: 'gcr.io/donald-gcp/npm'
-    args: ['test']
-  - name: "gcr.io/donald-gcp/gcloud"
-    args: ["app", "deploy"]
-    timeout: "1600s"
+    args: ['run','test']
+  - name: 'gcr.io/donald-gcp/gcloud'
+    args: ['app', 'deploy']
