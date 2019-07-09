@@ -12,6 +12,7 @@ const plumber = require("gulp-plumber");
 const rename = require("gulp-rename");
 const sass = require("gulp-sass");
 const uglify = require("gulp-uglify");
+const premailer   = require('gulp-premailer');
 
 // Load package.json for banner
 const pkg = require('./package.json');
